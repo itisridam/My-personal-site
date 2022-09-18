@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --blue-clr: #0082fd;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background:#22242f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    bottom: auto;
+}
+
+
+/* ==== Typography ==== */
+span{
+    font-weight: 100;
+    border-bottom: 2px solid var(--blue-clr);
+}
+
+.hero-sec-heading{
+    font-size: clamp(20px, 4vw, 2.8rem);
+    margin-right: auto;
+}
+
+.welcome{
+    text-transform: capitalize;
+}
+
+
+/* ==== Layout ==== */
+nav div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+ul > li, .container{
+    padding: 0.5em 2em;
+}
+
+.container{
+    margin: auto;
+    max-width: 1200px;
+    border: 2px solid pink
+}
+
+.nav-content-wrapper{
+    width: 100%
+}
+
+
+.hero-form{
+    margin-bottom: .8em;
+}
+
+.hero-form-input, .hero-form-btn{
+    padding: 1em 1.25em;
+    border: none;
+    border-radius: 5px;
+}
+
+.hero-form-btn{
+    background: var(--blue-clr);
+    color: white;
+    font-weight: 600;
+    margin-left: .6em;
+}
+
+.hero-img-wrapper img{
+    max-width: 100%
+}
+
+@media (min-width: 600px){
+    .hero-section-wrapper{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
